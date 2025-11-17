@@ -25,3 +25,83 @@ if Varaibleforthis == 50:
     print("The value is equal to 50")
 else:
     print("The value is NOT equal to 50")
+
+#PRACTICE 3
+
+Varaible2 = int(input("Please enter an integer value without decimal points: "))
+print(type(Varaible2))
+
+if Varaible2 == 30:
+    print("Yes, value is 30")
+else:
+    print("No, value is NOT 30")
+
+#PRACTICE 4
+'Between 0 and 10'
+VR1= input('Enter an integer value to see if it is between 0 and 10')
+VR1=int(VR1)
+print(type(VR1))
+
+if VR1 > 0 and VR1 < 10:
+  print('Value is between 0 and 10')
+
+else:
+  print('Value is NOT between 0 and 10')
+
+
+#PRACTICE 5
+'LOGICAL OPERATORS AND, OR, NOT'
+
+# We have to ask the user for a number
+UserValue = input("Enter an integer value:")
+UserValue = int(UserValue)
+
+# Check if the value is between 80 and 90
+if UserValue >= 80 and UserValue <= 90:
+    print("The value is between 80 and 90")
+else:
+    print("The value is NOT between 80 and 90")
+
+#PRACTICE 6 with OR
+# We have to ask the user for a number
+UserA = input("Enter an integer value: ")
+UserA = int(UserA)
+
+# Check if the value is between 40 or 60
+if UserA == 40 or UserA == 60:
+    print("The value is either 40 or 60")
+else:
+    print("The value is NOT either 40 or 60")
+
+#PRACTICE 7 with NOT
+
+switchstate=True
+buttonpressed = 0
+
+if buttonpressed==1:
+    switchstate = not switchstate
+    print(switchstate)
+
+
+#CREATING A CALCULATOR
+# WE 22ENTER NUMBERS
+FirstNumber = int(input("Enter the first number for the calculator: "))
+SecondNumber = int(input("Enter the second number for the calculator: "))
+
+# CLICK ON OPERATORS
+Operator = input("Enter an operator (+, -, *, %): ")
+
+if Operator == "+":
+    Result = FirstNumber + SecondNumber
+    print("Your result is:", Result)
+elif Operator == "-":
+    Result = FirstNumber - SecondNumber
+    print("Your result is:", Result)
+elif Operator == "*":
+    Result = FirstNumber * SecondNumber
+    print("Your result is", Result)
+elif Operator == "%":
+    Result = FirstNumber % SecondNumber
+    print("Your result is:", Result)
+else:
+    print("Invalid operator entered")
